@@ -1,0 +1,41 @@
+\documentclass[12pt,a4paper]{article}
+\pagestyle{plain}
+\oddsidemargin=-10pt
+\textwidth=17cm
+\topmargin=-2cm
+\textheight=23.7cm
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\bigskipamount}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{mathtext}
+\usepackage{textcomp,mathcomp}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{cyrtimes}
+%\linespread{1.0}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+
+\usepackage[colorlinks=true,anchorcolor=black,urlcolor=black,linkcolor=black]{hyperref}
+
+
+\begin{document}
+\input title.tex
+
+\captionsrussian{\renewcommand{\contentsname}{}}
+\setcounter{tocdepth}{3}
+\tableofcontents
+
+\input ch1.tex
+\input ch2.tex
+\input ch3.tex
+\input ch4.tex
+\input ch5.tex
+
+\end{document}
