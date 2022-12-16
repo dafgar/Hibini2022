@@ -10,26 +10,37 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{\bigskipamount}
 
-\usepackage{booktabs}
 \usepackage{longtable}
-\usepackage{mathtext}
-\usepackage{textcomp,mathcomp}
-\usepackage[T2A]{fontenc}
-\usepackage[utf8x]{inputenc}
-\usepackage[english,russian]{babel}
+\usepackage{mathcomp}
+
+% Native language
 \usepackage{cyrtimes}
-%\linespread{1.0}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\setotherlanguage{english}
+%\setkeys{russian}{babelshorthands=true}
+\defaultfontfeatures{Ligatures=TeX}
+
+% Fonts
+\setmainfont{Times New Roman}
+\newfontfamily{\cyrillicfont}{Times New Roman}
+\newfontfamily{\cyrillicfontsf}{Times New Roman}
+
+% Language native quotes
+\usepackage[autostyle=true]{csquotes}
 
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{caption}
 
+% Barriers for floats
 \usepackage[section]{placeins}
 
 \usepackage[colorlinks=true,anchorcolor=black,urlcolor=black,linkcolor=black]{hyperref}
 \urlstyle{sf}
 
-%alphabetically
+% Alphabetically
 \author{Fomin S.A}
 \author{Gusev R.B.}
 
@@ -37,7 +48,6 @@
 \begin{document}
 \input title.tex
 
-\captionsrussian{\renewcommand{\contentsname}{}}
 \setcounter{tocdepth}{3}
 \tableofcontents
 
